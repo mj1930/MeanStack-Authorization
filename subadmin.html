@@ -1,0 +1,19 @@
+
+
+<div>
+  <h1>SubAdmin</h1>
+  <form>
+    <input type="text" name="username" placeholder="username" ng-model="user.username">
+    <input type="password" name="password" placeholder="password" ng-model="user.password">
+    <input type="text" name="firstname" placeholder="firstName" ng-model="user.first_name">
+    <input type="text" name="lastname" placeholder="lastName" ng-model="user.last_name">
+    Type<select name="type" ng-model="user.type" value="type">
+      <option name="1">1</option>
+      <option name="2">2</option>
+    </select>
+    <button ng-click="add(user)" class="btn btn-danger">Add User</button>
+    <button type="reset" value="Reset" class="btn btn-danger">Clear</button>
+  </form>
+  <p>{{successaddmsg}}</p>
+  
+</div>

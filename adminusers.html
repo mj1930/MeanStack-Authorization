@@ -1,0 +1,33 @@
+<h2>Registered users</h2>
+
+<table ng-repeat="user in users | orderBy:'username'" border="1px">
+  <tr>
+    <th style="padding:10px">
+      Username
+    </th>
+    <th style="padding:10px">
+      Password
+    </th>
+    <th style="padding:10px">
+      FirstName
+    </th>
+    <th style="padding:10px">
+      lastname
+    </th>
+    <th style="padding:10px">
+      type
+    </th>
+    <th style="padding:10px">
+      Delete
+    </th>
+
+  </tr>
+  <tr>
+    <td style="padding:10px">{{user.username}}</td>
+    <td style="padding:10px">{{user.password}}</td>
+    <td style="padding:10px">{{user.first_name}}</td>
+    <td style="padding:10px">{{user.last_name}}</td>
+    <td style="padding:10px">{{user.type  }}</td>
+    <td style="padding:10px"><button ng-click="remove(user)" class="btn btn-danger">Delete</button></td>
+  </tr>
+</table>

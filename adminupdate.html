@@ -1,0 +1,13 @@
+<h1 style="text-align:center">Update Profile</h1>
+
+
+
+<form style="width:40%;margin-left:30%">
+  <p style="text-align:center;color:#00b300;">{{updatmsg}}</p>
+  UserName:<input ng-model="currentUser.username" class="form-control"/><br/>
+  Password:<input ng-model="currentUser.password" class="form-control" type="password"/><br/>
+  FirstName:<input ng-model="currentUser.first_name" class="form-control"/><br/>
+  LastName<input ng-model="currentUser.last_name" class="form-control"/><br/>
+
+  <button class="btn btn-success" ng-click="update(currentUser)">Update</button>
+</form>

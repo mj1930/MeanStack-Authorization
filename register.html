@@ -1,0 +1,52 @@
+<h1 style="text-align:center">Register</h1>
+<p  style="text-align:center;color:#ff3333;">{{errormsg}}</p>
+<p  style="text-align:center;color: #00b300;">{{successmsg}}</p>
+
+<form method="post" style="width:40%;margin-left:30%">
+        <div class="form-group">
+            <label for="firstName">First name</label>
+
+	         <div>
+
+            <input type="text" name="first_name" id="first_name" class="form-control"  ng-model="user.first_name" required />
+        </div>
+           </div>
+        <div class="form-group">
+            <label for="lastName">Last name</label>
+
+	    <div>
+            <input type="text" name="last_name" id="last_name" class="form-control" ng-model="user.last_name" required/>
+        </div>
+              </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+
+	    <div>
+            <input type="text" name="username" id="username" class="form-control" ng-model="user.username" required/>
+        </div>
+           </div>
+
+
+
+
+        <div class="form-group">
+            <label for="password">Password</label>
+
+   		<div>
+            <input type="password" name="password" id="password" class="form-control" ng-model="user.password" required />
+        </div>
+            </div>
+       <div class="form-group">
+            <label for="password">Confirm Password</label>
+
+   		<div>
+            <input type="password" name="password2" id="password2" class="form-control" ng-model="user.password2"  required/>
+        </div>
+      </div>
+
+
+
+<button ng-click="register(user)" class="btn btn-danger" style="width:100%">Register</button><br/>
+{{message}}
+
+</form>
